@@ -7,12 +7,18 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TextInput,
+} from 'react-native';
 
 const App = () => {
   return (
     <SafeAreaView>
       <Text style={styles.appTitle}>PATIKASTORE</Text>
+      <TextInput style={styles.textInput} placeholder="Ara.." />
     </SafeAreaView>
   );
 };
@@ -24,6 +30,14 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     margin: 10,
+    marginBottom: 3,
     color: 'purple',
+  },
+  textInput: {
+    margin: 10,
+    marginTop: 3,
+    backgroundColor: 'rgb(239,239,239)',
+    padding: 10,
+    borderRadius: 10,
   },
 });
